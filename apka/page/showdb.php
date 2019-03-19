@@ -89,7 +89,7 @@ if($_SESSION['status']==TRUE && $_SESSION['userid']==1)
        <a id="account" href="index.php?page=account"><img src="page/avatar1.png"></a>
        <span id="userlogin">'.$_SESSION['userlogin'].' </span>
         </div>
-        <a id="back" href="index.php?page=zakupy">&#8592;</a>';
+        <a id="back" href="index.php?page=home">&#8592;</a>';
    $sql = 'SELECT COUNT(*) FROM `idzamowienia` ';
    $result = mysqli_query($connection,$sql);
    $r = mysqli_fetch_row($result);
