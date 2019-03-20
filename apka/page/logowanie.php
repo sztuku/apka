@@ -8,10 +8,6 @@
     
 
 <?php
-$connection = mysqli_connect('localhost', 'root', '') 
-or die('Brak połączenia z serwerem MySQL'); 
-$db = mysqli_select_db( $connection , 'lista') 
-or die('Nie mogę połączyć się z bazą danych'); 
 echo '<div id=logwindow style="display:block;">
 
 <img src="page/avatar1.png" >

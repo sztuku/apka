@@ -12,7 +12,7 @@ var field = document.getElementsByClassName("ilosc");
 var container = document.getElementById('container');
 
 
-pole.focus();
+
 
 guzik.addEventListener("click", dodaj, false);
 wyczysc.addEventListener("click", clean, false);

@@ -8,13 +8,6 @@
 
   
 <?php 
-
-$connection = mysqli_connect('localhost', 'root', '') 
-or die('Brak połączenia z serwerem MySQL'); 
-$db = mysqli_select_db( $connection , 'lista') 
-or die('Nie mogę połączyć się z bazą danych'); 
-
-
 $loop = $_POST['loop'];
 
 $_SESSION['loop'] = $_POST['loop'];
@@ -100,7 +93,7 @@ for ($i = 0; $i < ($loop+1); $i++)
     
         
 
-        $ins = mysqli_query($connection,'INSERT INTO lista SET  Item="'.$_POST['toGet'.$i].'", Ilosc="'.$_POST['countWindow'.$i].'" , Id_zamowienia="'.$printId.'" ,`userid`="'.$_SESSION['userid'].'"'); 
+ $ins = mysqli_query($connection,'INSERT INTO lista SET  Item="'.$_POST['toGet'.$i].'", Ilosc="'.$_POST['countWindow'.$i].'" , Id_zamowienia="'.$printId.'" ,`userid`="'.$_SESSION['userid'].'"'); 
 
       
        

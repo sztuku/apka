@@ -2,12 +2,6 @@
  
   <?php
 
-$connection = mysqli_connect('localhost', 'root', '') 
-or die('Brak połączenia z serwerem MySQL'); 
-$db = mysqli_select_db( $connection , 'lista') 
-or die('Nie mogę połączyć się z bazą danych'); 
-
-
 
 
 
@@ -59,6 +53,9 @@ echo '<div id="browse">
     <input type="text" id="wejscie" autocomplete="off" >
     <button id="add"><i  >+</i></button>
 </div>  
+<script type="text/javascript">
+pole.focus();
+</script>
     
     <form id="form" action="index.php?page=lista" method="POST">
     

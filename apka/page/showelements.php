@@ -7,10 +7,6 @@
 
 
 
-  $connection = mysqli_connect('localhost', 'root', '') 
-  or die('Brak połączenia z serwerem MySQL'); 
-  $db = mysqli_select_db( $connection , 'lista') 
-  or die('Nie mogę połączyć się z bazą danych'); 
 
  if($_SESSION['userid']==1){
     echo '<a  id="history" href="index.php?page=showdb" style="float:right; margin-right: 14%; margin-top: -1%;"><img src="page/db.png"></a> ';
